@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:weightSum="5">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dp">
+
+        <TextView
+            android:text="Credit Card Helper($)"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_height="fill_parent"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Enter card Balance($)"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_height="fill_parent"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id="@+id/cardBalance"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:inputType="number"
+            android:background="#ffffff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <TextView android:text="Enter yearly Interest Rate(%)"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_height="fill_parent"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id="@+id/yearlyInterest"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:inputType="number"
+            android:background="#ffffff"/>/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+
+        <TextView android:text="Enter minimum payment($)"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_height="fill_parent"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id="@+id/minimumPayment"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:inputType="number"
+            android:background="#ffffff"/>/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Check"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Check for null values $"/>
+</LinearLayout>
